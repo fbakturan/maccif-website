@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maccif — Masif Ahşap Masa Düzenleyici</title>
-<meta name="description" content="Masif maun ağacından, el işçiliğiyle üretilmiş, masanıza güç ve prestij katan ahşap düzenleyici. Babanız, eşiniz ve kendiniz için.">
+<title>MACCIF — Masif Ahşap Ev &amp; Ofis Koleksiyonu</title>
+<meta name="description" content="MDF değil, sunta değil — yalnızca masif ahşap. Türk zanaatkârlığıyla üretilen premium ev ve ofis objeleri. Ankara'dan, tüm Türkiye'ye.">
 
-<meta property="og:title" content="Maccif — Masanın Hak Ettiği Düzen">
-<meta property="og:description" content="Masif maun, el işçiliği, nesiller boyu kalıcı tasarım.">
+<meta property="og:title" content="MACCIF — Masif Ahşabın Evi">
+<meta property="og:description" content="Yalnızca masif ahşap. Türk zanaatkârlığı. Premium ev ve ofis koleksiyonu.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://maccif.com">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -25,8 +25,8 @@
   --line: #2A211A;
   --cream: #F2EAD6;
   --muted: #948578;
-  --wood: #C9904C;
-  --wood-dim: #8A6336;
+  --wood: #C9A84C;
+  --wood-dim: #8A7236;
 }
 
 html { scroll-behavior: smooth; }
@@ -41,39 +41,36 @@ body {
   overflow-x: hidden;
 }
 
-.serif { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
-
 /* ===== NAV ===== */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 24px 48px;
+  padding: 22px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(14, 10, 7, 0.85);
+  background: rgba(14, 10, 7, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
 
 .logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
-  letter-spacing: 0.4em;
+  font-size: 26px;
+  letter-spacing: 0.42em;
   font-weight: 500;
   color: var(--cream);
   text-decoration: none;
 }
-
 .logo span { color: var(--wood); }
 
-.nav-links { display: flex; gap: 40px; align-items: center; }
+.nav-links { display: flex; gap: 36px; align-items: center; }
 .nav-links a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 0.15em;
+  font-size: 12px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   transition: color 0.3s;
 }
@@ -95,43 +92,38 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 120px 48px 80px;
+  padding: 130px 48px 90px;
   background:
-    radial-gradient(ellipse at 50% 30%, rgba(201, 144, 76, 0.08), transparent 60%),
+    radial-gradient(ellipse at 50% 25%, rgba(201, 168, 76, 0.07), transparent 62%),
     var(--bg);
 }
 
-.hero-inner { max-width: 900px; text-align: center; }
+.hero-inner { max-width: 920px; text-align: center; }
 
 .eyebrow {
   font-size: 11px;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.42em;
   text-transform: uppercase;
   color: var(--wood);
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(48px, 7vw, 96px);
+  font-size: clamp(46px, 7vw, 92px);
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.06;
   letter-spacing: -0.02em;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
-
-.hero h1 em {
-  font-style: italic;
-  color: var(--wood);
-  font-weight: 400;
-}
+.hero h1 em { font-style: italic; color: var(--wood); font-weight: 400; }
 
 .hero p {
   font-size: 17px;
   color: var(--muted);
-  max-width: 560px;
-  margin: 0 auto 48px;
-  line-height: 1.8;
+  max-width: 580px;
+  margin: 0 auto 46px;
+  line-height: 1.85;
 }
 
 .btn-primary {
@@ -140,8 +132,8 @@ nav {
   background: var(--wood);
   color: var(--bg);
   text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 0.2em;
+  font-size: 12px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 2px;
@@ -149,42 +141,55 @@ nav {
 }
 .btn-primary:hover { background: var(--cream); transform: translateY(-2px); }
 
+.btn-ghost {
+  display: inline-block;
+  padding: 17px 40px;
+  border: 1px solid var(--line);
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-left: 14px;
+  transition: all 0.3s;
+}
+.btn-ghost:hover { border-color: var(--wood); color: var(--wood); }
+
 .scroll-hint {
   position: absolute;
-  bottom: 40px;
+  bottom: 38px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 10px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.32em;
   color: var(--muted);
   text-transform: uppercase;
-  animation: bob 2s ease-in-out infinite;
+  animation: bob 2.2s ease-in-out infinite;
 }
 @keyframes bob { 0%,100%{transform:translate(-50%,0)} 50%{transform:translate(-50%,8px)} }
 
-/* ===== SECTIONS ===== */
+/* ===== SHARED ===== */
 section { padding: 120px 48px; }
-
-.container { max-width: 1200px; margin: 0 auto; }
+.container { max-width: 1180px; margin: 0 auto; }
 
 .section-eyebrow {
   font-size: 11px;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.42em;
   text-transform: uppercase;
   color: var(--wood);
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   display: block;
 }
 
 .section-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(36px, 5vw, 56px);
+  font-size: clamp(34px, 5vw, 54px);
   font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 32px;
+  line-height: 1.12;
+  margin-bottom: 28px;
   letter-spacing: -0.01em;
 }
-
 .section-title em { font-style: italic; color: var(--wood); }
 
 /* ===== MANIFESTO ===== */
@@ -192,149 +197,34 @@ section { padding: 120px 48px; }
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--bg-2);
+  padding: 90px 48px;
 }
-
-.manifesto .container {
-  max-width: 760px;
-  text-align: center;
-}
-
+.manifesto .container { max-width: 780px; text-align: center; }
 .manifesto p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: 300;
-  line-height: 1.6;
-  color: var(--cream);
+  line-height: 1.55;
   font-style: italic;
 }
-
 .manifesto p::before, .manifesto p::after {
   content: '—';
   color: var(--wood);
   margin: 0 16px;
 }
 
-/* ===== FEATURES ===== */
-.features-header {
+/* ===== FEATURED PRODUCT ===== */
+.featured .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  margin-bottom: 80px;
-  align-items: end;
-}
-
-.features-header p {
-  color: var(--muted);
-  font-size: 16px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-}
-
-.feature {
-  background: var(--bg);
-  padding: 48px 36px;
-  transition: background 0.4s;
-}
-.feature:hover { background: var(--bg-2); }
-
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 28px;
-  color: var(--wood);
-}
-
-.feature h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 26px;
-  font-weight: 400;
-  margin-bottom: 12px;
-  letter-spacing: -0.01em;
-}
-
-.feature p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-/* ===== CRAFT ===== */
-.craft { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-
-.craft-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  margin-top: 60px;
-}
-
-.craft-step { position: relative; }
-
-.craft-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 80px;
-  font-weight: 300;
-  color: var(--wood-dim);
-  line-height: 1;
-  margin-bottom: 24px;
-}
-
-.craft-step h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-
-.craft-step p { color: var(--muted); font-size: 15px; }
-
-/* ===== GIFT ===== */
-.gift .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 90px;
   align-items: center;
 }
 
-.gift-text p {
-  color: var(--muted);
-  font-size: 16px;
-  margin-bottom: 24px;
-}
-
-.gift-text ul {
-  list-style: none;
-  margin-top: 32px;
-}
-
-.gift-text li {
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 15px;
-  color: var(--cream);
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.gift-text li::before {
-  content: '';
-  width: 6px; height: 6px;
-  background: var(--wood);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.gift-visual {
+.featured-visual {
   aspect-ratio: 4/5;
   background:
-    linear-gradient(135deg, rgba(201, 144, 76, 0.15), transparent),
+    linear-gradient(150deg, rgba(201, 168, 76, 0.14), transparent 55%),
     var(--surface);
   border: 1px solid var(--line);
   position: relative;
@@ -342,121 +232,300 @@ section { padding: 120px 48px; }
   align-items: center;
   justify-content: center;
 }
-
-.gift-visual::before {
+.featured-visual::before {
   content: '';
   position: absolute;
-  inset: 24px;
+  inset: 22px;
   border: 1px solid var(--wood-dim);
   opacity: 0.3;
 }
-
-.gift-visual-content {
-  text-align: center;
-  padding: 40px;
-}
-
-.gift-visual-content .label {
-  font-size: 11px;
-  letter-spacing: 0.4em;
+.fv-content { text-align: center; padding: 40px; position: relative; }
+.fv-content .label {
+  font-size: 10px;
+  letter-spacing: 0.42em;
   color: var(--wood);
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
-
-.gift-visual-content h4 {
+.fv-content h4 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 300;
   font-style: italic;
-  line-height: 1.2;
+  line-height: 1.22;
 }
 
-/* ===== CTA STRIP ===== */
+.featured-text > p {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.feature-list { list-style: none; margin: 36px 0 44px; }
+.feature-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.feature-list li::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--wood);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ===== COLLECTION ===== */
+.collection { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+.collection-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 70px;
+  align-items: end;
+}
+.collection-header p { color: var(--muted); font-size: 16px; }
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.col-card {
+  background: var(--bg-2);
+  padding: 52px 38px;
+  position: relative;
+  transition: background 0.4s;
+}
+.col-card:hover { background: var(--surface); }
+
+.col-card.active { background: var(--bg); }
+.col-card.active:hover { background: var(--surface); }
+
+.col-status {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 2px;
+}
+.col-status.now { color: var(--bg); background: var(--wood); font-weight: 500; }
+.col-status.soon { color: var(--muted); border: 1px solid var(--line); }
+
+.col-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.col-card p { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+.col-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--wood);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--wood-dim);
+  padding-bottom: 4px;
+  transition: all 0.3s;
+}
+.col-link:hover { color: var(--cream); border-color: var(--cream); }
+
+/* ===== CRAFT ===== */
+.craft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 56px;
+}
+.craft-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 76px;
+  font-weight: 300;
+  color: var(--wood-dim);
+  line-height: 1;
+  margin-bottom: 22px;
+}
+.craft-step h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.craft-step p { color: var(--muted); font-size: 15px; }
+
+/* ===== ABOUT ===== */
+.about { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.about .container { max-width: 800px; text-align: center; }
+.about-body p {
+  color: var(--muted);
+  font-size: 16.5px;
+  line-height: 1.95;
+  margin-bottom: 26px;
+  text-align: left;
+}
+.about-body p:first-of-type::first-letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 54px;
+  float: left;
+  line-height: 0.85;
+  margin: 6px 12px 0 0;
+  color: var(--wood);
+}
+.about-sign {
+  margin-top: 40px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--wood);
+}
+
+/* ===== CORPORATE ===== */
+.corporate .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 90px;
+  align-items: center;
+}
+.corporate-text p { color: var(--muted); font-size: 16px; margin-bottom: 22px; }
+
+.corp-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 52px 44px;
+}
+.corp-box h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.corp-box p { color: var(--muted); font-size: 14.5px; margin-bottom: 32px; }
+.corp-mail {
+  display: block;
+  color: var(--wood);
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--wood-dim);
+  padding-bottom: 6px;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.corp-mail:hover { color: var(--cream); border-color: var(--cream); }
+
+/* ===== CTA ===== */
 .cta-strip {
-  padding: 100px 48px;
+  padding: 110px 48px;
   text-align: center;
   border-top: 1px solid var(--line);
 }
-
 .cta-strip h2 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(38px, 6vw, 68px);
   font-weight: 300;
   font-style: italic;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
 }
-
-.cta-strip p {
-  color: var(--muted);
-  margin-bottom: 48px;
-  font-size: 16px;
-}
+.cta-strip p { color: var(--muted); margin-bottom: 46px; font-size: 16px; }
 
 /* ===== FOOTER ===== */
 footer {
-  padding: 60px 48px 40px;
+  padding: 64px 48px 44px;
   border-top: 1px solid var(--line);
   background: var(--bg-2);
 }
-
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
+}
+.footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 40px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
 }
-
-.footer-meta {
-  font-size: 12px;
+.footer-brand .logo { font-size: 24px; }
+.footer-brand p {
+  margin-top: 16px;
+  font-size: 13px;
   color: var(--muted);
-  letter-spacing: 0.08em;
+  max-width: 280px;
+  line-height: 1.7;
 }
-
-.footer-links {
-  display: flex;
-  gap: 32px;
+.footer-col h4 {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin-bottom: 20px;
+  font-weight: 500;
 }
-
-.footer-links a {
+.footer-col a {
+  display: block;
   color: var(--muted);
   text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: 13.5px;
+  margin-bottom: 12px;
   transition: color 0.3s;
 }
-.footer-links a:hover { color: var(--wood); }
+.footer-col a:hover { color: var(--wood); }
+.footer-col span {
+  display: block;
+  color: var(--muted);
+  font-size: 13.5px;
+  margin-bottom: 12px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
 
 /* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  nav { padding: 18px 24px; }
-  .nav-links { gap: 16px; }
+@media (max-width: 860px) {
+  nav { padding: 16px 22px; }
+  .nav-links { gap: 14px; }
   .nav-links a:not(.nav-cta) { display: none; }
-  .logo { font-size: 22px; letter-spacing: 0.3em; }
+  .logo { font-size: 20px; letter-spacing: 0.32em; }
   section { padding: 80px 24px; }
-  .hero { padding: 100px 24px 60px; }
-  .features-header { grid-template-columns: 1fr; gap: 24px; margin-bottom: 48px; }
-  .features-grid { grid-template-columns: 1fr; }
-  .feature { padding: 36px 28px; }
-  .craft-grid { grid-template-columns: 1fr; gap: 48px; }
-  .gift .container { grid-template-columns: 1fr; gap: 48px; }
+  .hero { padding: 110px 24px 70px; }
+  .btn-ghost { margin-left: 0; margin-top: 14px; }
+  .featured .container,
+  .corporate .container { grid-template-columns: 1fr; gap: 48px; }
+  .collection-header { grid-template-columns: 1fr; gap: 22px; margin-bottom: 44px; }
+  .collection-grid { grid-template-columns: 1fr; }
+  .craft-grid { grid-template-columns: 1fr; gap: 44px; }
+  .manifesto { padding: 64px 24px; }
   .manifesto p { font-size: 20px; }
   .manifesto p::before, .manifesto p::after { display: block; margin: 12px 0; }
-  footer { padding: 40px 24px; }
-  .footer-inner { flex-direction: column; text-align: center; }
+  footer { padding: 48px 24px 36px; }
+  .footer-top { flex-direction: column; }
 }
 
-/* ===== REVEAL ANIMATION ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
+/* ===== REVEAL ===== */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 </style>
 </head>
@@ -466,143 +535,184 @@ footer {
   <a href="#" class="logo">MAC<span>C</span>IF</a>
   <div class="nav-links">
     <a href="#urun">Ürün</a>
+    <a href="#koleksiyon">Koleksiyon</a>
     <a href="#zanaat">Zanaat</a>
-    <a href="#hediye">Hediye</a>
-    <a href="https://www.trendyol.com" target="_blank" rel="noopener" class="nav-cta">Mağaza</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#kurumsal">Kurumsal</a>
+    <a href="https://www.trendyol.com/magaza/maccif-m-1277447?channelId=1&amp;sst=0&amp;sk=1" target="_blank" rel="noopener" class="nav-cta">Mağaza</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">Masif Maun · El İşçiliği</div>
-    <h1>Masanız bir <em>manifesto</em>.<br>Maccif onu yazar.</h1>
-    <p>Telefon, saat, gözlük, anahtar, kalem ve cüzdan — hepsi tek bir ahşap heykelde. Babanız, eşiniz ve kendiniz için tasarlandı.</p>
-    <a href="https://www.trendyol.com" target="_blank" rel="noopener" class="btn-primary">Trendyol'da İncele</a>
+    <div class="eyebrow">Masif Ahşap · Türk Zanaatkârlığı</div>
+    <h1>Ağaç gibi yaşayan<br><em>objeler</em> üretiyoruz.</h1>
+    <p>MDF değil. Sunta değil. Kaplama değil. MACCIF'in her ürünü masif ahşaptan kesilir, elde zımparalanır, doğal yağla bitirilir. Eviniz ve ofisiniz için — yıllarca kalacak şekilde.</p>
+    <a href="https://www.trendyol.com/magaza/maccif-m-1277447?channelId=1&amp;sst=0&amp;sk=1" target="_blank" rel="noopener" class="btn-primary">Mağazayı Keşfet</a>
+    <a href="#koleksiyon" class="btn-ghost">Koleksiyon</a>
   </div>
   <div class="scroll-hint">Aşağı kaydır</div>
 </section>
 
 <!-- MANIFESTO -->
 <section class="manifesto">
-  <div class="container">
-    <p>Düzen bir araç değildir. Karakterdir.</p>
+  <div class="container reveal">
+    <p>Masif ahşap eskimez. Yaşlanır — ve yaşlandıkça güzelleşir.</p>
   </div>
 </section>
 
-<!-- FEATURES -->
-<section id="urun">
-  <div class="container">
-    <div class="features-header">
-      <div>
-        <span class="section-eyebrow">Ürün</span>
-        <h2 class="section-title">Altı işlev,<br>tek bir <em>obje</em>.</h2>
+<!-- FEATURED PRODUCT -->
+<section class="featured" id="urun">
+  <div class="container reveal">
+    <div class="featured-visual">
+      <div class="fv-content">
+        <div class="label">İlk Ürün · Sınırlı Üretim</div>
+        <h4>Masaüstü<br>Düzenleyici</h4>
       </div>
-      <p>Her detay, gün içinde aklınızı meşgul eden her küçük "nerede o" anını ortadan kaldırmak için tasarlandı. Akşam masaya bıraktığınız her şey, sabah tam olarak orada durur.</p>
+    </div>
+    <div class="featured-text">
+      <span class="section-eyebrow">Öne Çıkan</span>
+      <h2 class="section-title">Masanın<br><em>karakteri</em>.</h2>
+      <p>Telefon, saat, gözlük, anahtar, kalem ve cüzdan — gün boyunca dağılan her şey, akşam tek bir masif maun objede toplanır. Sabah tam bıraktığınız yerde durur.</p>
+      <ul class="feature-list">
+        <li>Masif maun gövde — kaplama veya MDF içermez</li>
+        <li>Telefon yuvası, gizli kablo kanalıyla</li>
+        <li>Saat askısı, gözlük rafı, anahtar pimi</li>
+        <li>5 dakikada kurulum — tornavida dahil</li>
+        <li>Premium kraft kutu, hediyeye hazır</li>
+      </ul>
+      <a href="https://www.trendyol.com/magaza/maccif-m-1277447?channelId=1&amp;sst=0&amp;sk=1" target="_blank" rel="noopener" class="btn-primary">Trendyol'da İncele</a>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection" id="koleksiyon">
+  <div class="container reveal">
+    <div class="collection-header">
+      <div>
+        <span class="section-eyebrow">Koleksiyon</span>
+        <h2 class="section-title">Tek malzeme.<br>Büyüyen bir <em>aile</em>.</h2>
+      </div>
+      <p>MACCIF tek ürünlük bir marka değil — masif ahşap etrafında büyüyen bir koleksiyon. Ofisten mutfağa, her parça aynı ilkeyle üretilir: gerçek ağaç, gerçek işçilik.</p>
     </div>
 
-    <div class="features-grid">
-      <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="7" y="3" width="10" height="18" rx="1.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
-        <h3>Telefon Yuvası</h3>
-        <p>Hem dik hem yatık şarj eder. Kablo arkadan diskret çıkar, gözden kaybolur.</p>
+    <div class="collection-grid">
+      <div class="col-card active">
+        <span class="col-status now">Satışta</span>
+        <h3>Ofis</h3>
+        <p>Masaüstü düzenleyici ile başlayan seri. Çalışma masasına düzen ve ağırlık katan masif objeler.</p>
+        <a href="https://www.trendyol.com/magaza/maccif-m-1277447?channelId=1&amp;sst=0&amp;sk=1" target="_blank" rel="noopener" class="col-link">Mağazada Gör</a>
       </div>
-      <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="6"/><path d="M12 9v3l2 1"/><path d="M9 4h6M9 20h6"/></svg>
-        <h3>Saat Askısı</h3>
-        <p>Kavisli ahşap, mekanik saati ve akıllı bandı çizmeden tutar.</p>
+      <div class="col-card">
+        <span class="col-status soon">Yakında</span>
+        <h3>Mutfak</h3>
+        <p>Masif kesme tahtaları, sunum tepsileri ve servis objeleri. Mutfağın en çok dokunulan yüzeyleri, en asil malzemeden.</p>
       </div>
-      <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="7" cy="14" r="3"/><circle cx="17" cy="14" r="3"/><path d="M10 14h4M3 11l2-1M21 11l-2-1"/></svg>
-        <h3>Gözlük Rafı</h3>
-        <p>Okuma gözlüğü, güneş gözlüğü — ikisi de aynı raf üstünde rahatça durur.</p>
-      </div>
-      <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="9" cy="9" r="3"/><path d="M11 11l8 8M15 17l2 2M17 15l2 2"/></svg>
-        <h3>Anahtar Pimi</h3>
-        <p>Metal pim, anahtarlığı çantanızdan çıkarıp yerine asmayı bir refleks yapar.</p>
-      </div>
-      <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 3v15M9 18h6M10 21h4"/></svg>
-        <h3>Kalem Yuvası</h3>
-        <p>Dolma kalem, kurşun kalem, stylus — boyları farklı, yuvaları derin.</p>
-      </div>
-      <div class="feature">
-        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="8" width="18" height="11" rx="1"/><path d="M3 11h18M16 15h2"/></svg>
-        <h3>Gizli Cüzdan</h3>
-        <p>Görünmeyen bir oyuk: cüzdanınız ve airpods'unuz masanın altına saklanır.</p>
+      <div class="col-card">
+        <span class="col-status soon">Yakında</span>
+        <h3>Ev &amp; Dekor</h3>
+        <p>Duvardan rafa, yaşam alanlarına karakter katan masif ahşap dekorasyon parçaları. Koleksiyon her ay genişliyor.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CRAFT -->
-<section class="craft" id="zanaat">
-  <div class="container">
+<section id="zanaat">
+  <div class="container reveal">
     <span class="section-eyebrow">Zanaat</span>
-    <h2 class="section-title">Üç aşama.<br>Hiçbiri <em>kestirme</em> değil.</h2>
+    <h2 class="section-title">Üç ilke.<br>Hiçbirinden <em>taviz</em> yok.</h2>
 
     <div class="craft-grid">
       <div class="craft-step">
         <div class="craft-num">01</div>
-        <h3>Maun</h3>
-        <p>Masif maun, sert ve ağır. Damarları zamanla daha derinleşir, ucuz lake ahşapların aksine yıllar onu güzelleştirir.</p>
+        <h3>Yalnızca Masif</h3>
+        <p>Ürünlerimizde MDF, sunta veya kaplama bulunmaz. Her parça gerçek ağaçtan kesilir — damarları, dokusu, ağırlığı doğanın kendisidir.</p>
       </div>
       <div class="craft-step">
         <div class="craft-num">02</div>
-        <h3>El Zımparası</h3>
-        <p>CNC kesimden sonra her parça elden geçer. Kenarlar yumuşatılır, dokunduğunuzda fabrika değil atölye hissedersiniz.</p>
+        <h3>El İşçiliği</h3>
+        <p>Hassas kesimden sonra her parça zanaatkâr elinden geçer. Kenarlar yumuşatılır, yüzeyler elde zımparalanır. Fabrika değil, atölye hissi.</p>
       </div>
       <div class="craft-step">
         <div class="craft-num">03</div>
-        <h3>Doğal Yağ</h3>
-        <p>Parlak vernik yok. Hardwax oil ile damarlar açığa çıkar, mat ve sıcak bir yüzey kalır. Nemli bezle silmek yeter.</p>
+        <h3>Doğal Bitiş</h3>
+        <p>Parlak vernik kullanmıyoruz. Doğal yağ, ahşabın damarını açığa çıkarır; mat, sıcak ve dokunulası bir yüzey bırakır.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- GIFT -->
-<section class="gift" id="hediye">
-  <div class="container">
-    <div class="gift-text">
-      <span class="section-eyebrow">Hediye</span>
-      <h2 class="section-title">Bir kez verilir.<br><em>Yıllarca</em> kalır.</h2>
-      <p>Babalar Günü'nde, terfide, yeni bir ofiste — Maccif parfüm gibi tükenmez, kravat gibi unutulmaz. Yıllar sonra masada hâlâ orada olur.</p>
-      <ul>
-        <li>Premium kraft kutu, lazer baskılı marka</li>
-        <li>Pelesenk dolgu, siyah pelür kağıt sarımı</li>
-        <li>Kalın gramajlı teşekkür kartı</li>
-        <li>Sandal ağacı kokusu — açar açmaz</li>
-        <li>Montaj kılavuzu, mini tornavida, yedek vidalar</li>
-      </ul>
+<!-- ABOUT -->
+<section class="about" id="hakkimizda">
+  <div class="container reveal">
+    <span class="section-eyebrow">Hakkımızda</span>
+    <h2 class="section-title">Neden <em>MACCIF</em>?</h2>
+    <div class="about-body">
+      <p>Adımız, varlık sebebimizden geliyor: <strong>masif</strong>. Piyasanın "ahşap" diye sattığı ürünlerin büyük kısmı preslenmiş talaş ve kaplamadan ibaretken, biz tek bir soruyla yola çıktık — gerçek ağaçtan, gerçek işçilikle, yıllarca kalacak objeler üretilse nasıl olurdu?</p>
+      <p>MACCIF, Ankara'dan tüm Türkiye'ye üreten bir masif ahşap markasıdır. Her ürün, Türk zanaatkârlığının birikimini taşıyan atölyelerde şekillenir; elde zımparalanır, doğal yağla beslenir ve markamızı taşımaya layık görüldüğünde kutusuna girer. Hızlı tüketilen eşyalar çağında, biz yavaş eskiyen şeylerin tarafındayız.</p>
+      <p>Bir MACCIF objesi aldığınızda yalnızca bir ürün almazsınız — masanızda, mutfağınızda, evinizde her gün elinizin değdiği, zamanla güzelleşen bir parça edinmiş olursunuz.</p>
+      <div class="about-sign">Masif ahşabın evi.</div>
     </div>
-    <div class="gift-visual">
-      <div class="gift-visual-content">
-        <div class="label">Maccif</div>
-        <h4>Masaya<br>güç katar.</h4>
-      </div>
+  </div>
+</section>
+
+<!-- CORPORATE -->
+<section class="corporate" id="kurumsal">
+  <div class="container reveal">
+    <div class="corporate-text">
+      <span class="section-eyebrow">Kurumsal &amp; Toptan</span>
+      <h2 class="section-title">Ekibinize, müşterinize,<br>iş ortağınıza — <em>kalıcı</em> bir jest.</h2>
+      <p>Kurumsal hediye, logolu özel üretim ve toptan alımlar için çalışıyoruz. Masif ahşap objeler; plaketlerin ve ajandanın aksine masada kalır, her gün kullanılır — markanızı yıllarca hatırlatır.</p>
+      <p>Adet, kişiselleştirme ve teslim takvimi ihtiyacınızı yazın; aynı gün dönüş yapalım.</p>
+    </div>
+    <div class="corp-box">
+      <h3>Teklif Alın</h3>
+      <p>Kurumsal hediye ve toptan satış talepleriniz için bize doğrudan ulaşın.</p>
+      <a href="mailto:info@maccif.com?subject=Kurumsal%20%2F%20Toptan%20Teklif%20Talebi" class="corp-mail">info@maccif.com</a>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-strip">
-  <div class="container">
-    <h2>Masanız hazır mı?</h2>
-    <p>Sınırlı sayıda üretildi. Trendyol mağazamızdan inceleyin.</p>
-    <a href="https://www.trendyol.com" target="_blank" rel="noopener" class="btn-primary">Mağazaya Git</a>
+  <div class="container reveal">
+    <h2>Gerçek ahşapla tanışın.</h2>
+    <p>Sınırlı üretim. Trendyol mağazamızda.</p>
+    <a href="https://www.trendyol.com/magaza/maccif-m-1277447?channelId=1&amp;sst=0&amp;sk=1" target="_blank" rel="noopener" class="btn-primary">Mağazaya Git</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-meta">© 2026 Maccif · Türkiye'de tasarlandı ve üretildi</div>
-    <div class="footer-links">
-      <a href="mailto:info@maccif.com">İletişim</a>
-      <a href="https://www.trendyol.com" target="_blank" rel="noopener">Mağaza</a>
-      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">MAC<span>C</span>IF</a>
+        <p>Masif ahşap ev ve ofis koleksiyonu. MDF değil, sunta değil — yalnızca gerçek ağaç.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Mağaza</h4>
+        <a href="https://www.trendyol.com/magaza/maccif-m-1277447?channelId=1&amp;sst=0&amp;sk=1" target="_blank" rel="noopener">Trendyol</a>
+        <span>Amazon — yakında</span>
+        <span>Hepsiburada — yakında</span>
+      </div>
+      <div class="footer-col">
+        <h4>Sosyal</h4>
+        <a href="https://instagram.com/maccifhome" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@maccifhome" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <a href="mailto:info@maccif.com">info@maccif.com</a>
+        <span>Ankara, Türkiye</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MACCIF · Tüm hakları saklıdır</span>
+      <span>Türkiye'de tasarlandı ve üretildi</span>
     </div>
   </div>
 </footer>
@@ -610,11 +720,8 @@ footer {
 <script>
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('section > .container, .hero-inner').forEach(el => {
-  el.classList.add('reveal');
-  io.observe(el);
-});
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
 </body>
