@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Maccif — Masif Ahşap Kesme Tahtaları ve Masaüstü Düzenleyici</title>
-  <meta name="description" content="Maccif: masif ahşap panelden 3'lü standlı kesme tahtası seti, 30×20 cm oluklu kesme tahtası (Fındık, Ceviz, Meşe) ve masif maun masaüstü düzenleyici. Sunta, MDF ve kaplama yok. Türkiye'de üretim.">
+  <meta name="description" content="Maccif: masif ahşap panelden 3'lü standlı kesme tahtası seti, çelik+ahşap çift taraflı kesme tahtası, 30×20 cm oluklu kesme tahtası ve masif maun masaüstü düzenleyici. Sunta, MDF ve kaplama yok. Toptan, kurumsal ve fason üretim. Türkiye'de üretim.">
   <meta name="theme-color" content="#1a1a1a">
-  <link rel="canonical" href="https://maccif.com/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%231a1a1a'/><rect x='9' y='9' width='46' height='46' fill='none' stroke='%23c9a84c' stroke-width='2'/><text x='32' y='44' text-anchor='middle' font-family='Georgia,'Times New Roman',serif' font-size='30' fill='%23f5f0e8'>M</text></svg>" type="image/svg+xml">
+  <link rel="canonical" href="https://www.maccif.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Maccif">
   <meta property="og:locale" content="tr_TR">
-  <meta property="og:url" content="https://maccif.com/">
+  <meta property="og:url" content="https://www.maccif.com/">
   <meta property="og:title" content="Maccif — Gerçek masif ahşap">
-  <meta property="og:description" content="Masif ahşap kesme tahtaları ve masaüstü düzenleyici. Sunta, MDF ve kaplama yok. Türkiye'de üretim.">
-  <meta property="og:image" content="https://maccif.com/img/og.jpg">
+  <meta property="og:description" content="Masif ahşap kesme tahtaları, çift taraflı çelik+ahşap tahta ve masaüstü düzenleyici. Sunta, MDF ve kaplama yok. Toptan ve kurumsal sipariş. Türkiye'de üretim.">
+  <meta property="og:image" content="https://www.maccif.com/img/og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -30,8 +30,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Maccif",
-    "url": "https://maccif.com/",
-    "logo": "https://maccif.com/favicon.svg",
+    "url": "https://www.maccif.com/",
+    "logo": "https://www.maccif.com/favicon.svg",
     "email": "info@maccif.com",
     "sameAs": [
       "https://www.trendyol.com/magaza/maccif-m-1277447",
@@ -135,6 +135,12 @@
 
     /* Ürün kartları */
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .colors.two{grid-template-columns:repeat(2,1fr);max-width:820px}
+    .b2b-list{list-style:none;margin:30px auto 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px;max-width:640px;text-align:left}
+    .b2b-list li{color:var(--muted-dark);font-size:15px;padding-left:18px;position:relative}
+    .b2b-list li:before{content:"";position:absolute;left:0;top:11px;width:8px;height:1px;background:var(--gold)}
+    .nav .en{font:600 12px/1 var(--sans);letter-spacing:.14em;border:1px solid var(--line-dark);padding:7px 9px;border-radius:999px}
     .card{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .25s,box-shadow .25s}
     .card:hover{transform:translateY(-4px);box-shadow:0 24px 48px rgba(26,26,26,.10)}
     .card-media{position:relative;aspect-ratio:4/5;background:#fff;overflow:hidden}
@@ -232,7 +238,7 @@
       .bar .btn{display:none}
       .hero-grid,.split{grid-template-columns:1fr}
       .hero-media{order:-1;max-width:520px}
-      .grid-3{grid-template-columns:1fr 1fr}
+      .grid-3,.grid-4{grid-template-columns:1fr 1fr}
       .strip ul{grid-template-columns:1fr 1fr}
       .strip li:nth-child(3){border-left:0}
       .strip li:nth-child(n+3){border-top:1px solid var(--line)}
@@ -243,7 +249,7 @@
     }
     @media (max-width:640px){
       .wrap{width:min(100% - 32px,var(--max))}
-      .grid-3,.colors,.care,.pillars{grid-template-columns:1fr}
+      .grid-3,.grid-4,.colors,.colors.two,.care,.pillars,.b2b-list{grid-template-columns:1fr}
       .pillar,.pillar+.pillar{padding:28px 0 4px;border-left:0}
       .pillar+.pillar{border-top:1px solid var(--line)}
       .facts{grid-template-columns:repeat(3,1fr);gap:10px}
@@ -271,9 +277,10 @@
       <nav class="nav" id="nav" aria-label="Ana menü">
         <a href="#urunler">Ürünler</a>
         <a href="#set">Kesme Tahtası Seti</a>
-        <a href="#duzenleyici">Masaüstü Düzenleyici</a>
+        <a href="#duzenleyici">Düzenleyici</a>
         <a href="#masif">Neden Masif</a>
-        <a href="#kurumsal">Kurumsal</a>
+        <a href="/toptan/">Toptan &amp; Kurumsal</a>
+        <a class="en" href="/en/wholesale/" hreflang="en" lang="en">EN</a>
       </nav>
       <a class="btn btn-line" href="https://www.trendyol.com/magaza/maccif-m-1277447" target="_blank" rel="noopener">Trendyol Mağazası <span class="arrow" aria-hidden="true">↗</span></a>
       <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -338,7 +345,7 @@
           <p class="lead">Her ürünü tek bir işi iyi yapacak şekilde tasarlıyoruz: doğru malzeme, gereken detay, fazlası yok. Güncel fiyat ve stok Trendyol mağazamızda.</p>
         </div>
 
-        <div class="grid-3">
+        <div class="grid-4">
           <article class="card reveal">
             <div class="card-media">
               <img src="https://cdn.dsmcdn.com/mnresize/1200/1800/ty1964/prod/QC_ENRICHMENT/20260926/16/936f2767-0fa9-34dc-927a-ab73d3c68574/1_org_zoom.jpg"
@@ -358,6 +365,21 @@
           <article class="card reveal">
             <div class="card-media">
               <span class="badge">Yeni</span>
+              <img src="/img/cift-tarafli.jpg" width="900" height="1350" loading="lazy"
+                   sizes="(max-width:640px) 92vw, (max-width:980px) 46vw, 290px"
+                   alt="Çıkarılabilir paslanmaz çelik plakalı masif ahşap çift taraflı kesme tahtası">
+            </div>
+            <div class="card-body">
+              <p class="cat">Mutfak · Çift taraflı</p>
+              <h3>Çelik + Ahşap Çift Taraflı Kesme Tahtası</h3>
+              <p>Bir yüzü paslanmaz çelik, bir yüzü masif ahşap. Çiğ et ve balığı çelikte, sebze ve ekmeği ahşapta hazırlayın; plaka çıkar, ayrı yıkanır.</p>
+              <ul class="specs"><li>35×25×2,2 cm</li><li>Çıkarılabilir çelik plaka</li><li>Mıknatısla sabitlenir</li><li>Meyve suyu oluğu</li></ul>
+              <a class="card-link" href="https://www.trendyol.com/maccif/paslanmaz-celik-ve-masif-ahsap-cift-tarafli-kesme-tahtasi-cikarilabilir-miknatisli-plaka-35x25-cm-p-1226915825?merchantId=1277447" target="_blank" rel="noopener"><span>Trendyol'da incele</span> <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-media">
               <img src="https://cdn.dsmcdn.com/mnresize/1000/1500/ty1991/prod/QC_PREP/20261024/17/df996b03-b728-3d4f-960e-7393f691af57/1_org_zoom.jpg" srcset="https://cdn.dsmcdn.com/mnresize/600/900/ty1991/prod/QC_PREP/20261024/17/df996b03-b728-3d4f-960e-7393f691af57/1_org_zoom.jpg 600w, https://cdn.dsmcdn.com/mnresize/1000/1500/ty1991/prod/QC_PREP/20261024/17/df996b03-b728-3d4f-960e-7393f691af57/1_org_zoom.jpg 1000w"
                    sizes="(max-width:640px) 92vw, (max-width:980px) 46vw, 380px" width="1000" height="1500" loading="lazy"
                    alt="Fındık renkli 30×20 cm masif ahşap panel kesme tahtası, mermer tezgâhta domates ve bıçakla">
@@ -366,9 +388,9 @@
               <p class="cat">Mutfak · Tekli</p>
               <h3>Masif Ahşap Panel Kesme Tahtası 30×20</h3>
               <p>Setin en çok kullanılan orta boyu, şimdi tek başına. Doğramaya yetecek kadar geniş, tezgâhta yer kaplamayacak kadar kompakt.</p>
-              <div class="swatches" aria-label="Renk seçenekleri"><span class="sw" style="background:#4b3a2f" title="Fındık"></span><span class="sw" style="background:#6e3f26" title="Ceviz"></span><span class="sw" style="background:#b9783f" title="Meşe"></span> Fındık · Ceviz · Meşe</div>
+              <div class="swatches" aria-label="Renk seçenekleri"><span class="sw" style="background:#4b3a2f" title="Fındık"></span><span class="sw" style="background:#b9783f" title="Meşe"></span> Fındık · Meşe</div>
               <ul class="specs"><li>30×20×1,8 cm</li><li>Meyve suyu oluğu</li><li>Tutma deliği</li></ul>
-              <a class="card-link" href="https://www.trendyol.com/maccif/ceviz-mese-findik-renkleri-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener"><span>Trendyol'da incele</span> <span class="arrow" aria-hidden="true">↗</span></a>
+              <a class="card-link" href="https://www.trendyol.com/maccif/findik-rengi-koyu-kahve-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener"><span>Trendyol'da incele</span> <span class="arrow" aria-hidden="true">↗</span></a>
             </div>
           </article>
 
@@ -384,7 +406,7 @@
               <h3>Masif Maun Masaüstü Düzenleyici</h3>
               <p>Telefon, saat, gözlük, cüzdan ve anahtar tek yerde. Masayı toplar; hediye olarak da güzel durur.</p>
               <ul class="specs"><li>Masif maun</li><li>Kolay kurulum</li><li>Vida ve tornavida kutuda</li></ul>
-              <a class="card-link" href="https://www.trendyol.com/maccif/masif-maun-ahsap-masaustu-duzenleyici-erkek-telefon-stand-organizatoru-erkekler-icin-hediye-dogum-gunu-hediyesi-babalar-gunu-hediyesi-p-1156151100?merchantId=1277447" target="_blank" rel="noopener"><span>Trendyol'da incele</span> <span class="arrow" aria-hidden="true">↗</span></a>
+              <a class="card-link" href="https://www.trendyol.com/maccif/masif-maun-ahsap-masaustu-duzenleyici-erkek-telefon-ve-saat-stand-organizatoru-erkege-hediye-p-1156151100?merchantId=1277447" target="_blank" rel="noopener"><span>Trendyol'da incele</span> <span class="arrow" aria-hidden="true">↗</span></a>
             </div>
           </article>
         </div>
@@ -422,26 +444,22 @@
         <div class="head reveal">
           <div>
             <p class="eyebrow">Yeni · 30×20 cm</p>
-            <h2>Orta boy, şimdi üç renkte.</h2>
+            <h2>Orta boy, iki renkte.</h2>
           </div>
-          <p class="lead">Üç renkte de ölçü, kalınlık ve tasarım aynı. Renk adları yüzey rengini belirtir; ahşap doğal bir malzemedir, her tahtanın damarı kendine özgüdür.</p>
+          <p class="lead">İki renkte de ölçü, kalınlık ve tasarım aynı. Renk adları yüzey rengini belirtir; ahşap doğal bir malzemedir, her tahtanın damarı kendine özgüdür.</p>
         </div>
-        <div class="colors">
+        <div class="colors two">
           <figure class="color reveal" style="margin:0">
             <div class="card-media"><img src="https://cdn.dsmcdn.com/mnresize/600/900/ty1991/prod/QC_PREP/20261024/17/df996b03-b728-3d4f-960e-7393f691af57/1_org_zoom.jpg" srcset="https://cdn.dsmcdn.com/mnresize/600/900/ty1991/prod/QC_PREP/20261024/17/df996b03-b728-3d4f-960e-7393f691af57/1_org_zoom.jpg 600w, https://cdn.dsmcdn.com/mnresize/1000/1500/ty1991/prod/QC_PREP/20261024/17/df996b03-b728-3d4f-960e-7393f691af57/1_org_zoom.jpg 1000w" sizes="(max-width:640px) 92vw, 380px" width="600" height="900" loading="lazy" alt="Fındık renkli kesme tahtası"></div>
-            <div class="t"><b><span class="sw" style="background:#4b3a2f"></span>Fındık</b><span>Koyu, soğuk tonlu kahve. Beyaz, gri ve siyah tezgâhlarda zarif bir kontrast.</span><a class="card-link" href="https://www.trendyol.com/maccif/ceviz-mese-findik-renkleri-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener"><span>Fındık rengini incele</span> <span class="arrow" aria-hidden="true">↗</span></a></div>
-          </figure>
-          <figure class="color reveal" style="margin:0">
-            <div class="card-media"><img src="https://cdn.dsmcdn.com/mnresize/600/900/ty1990/prod/QC_PREP/20261024/17/459b4e29-9542-362b-80aa-05515bf76fac/1_org_zoom.jpg" srcset="https://cdn.dsmcdn.com/mnresize/600/900/ty1990/prod/QC_PREP/20261024/17/459b4e29-9542-362b-80aa-05515bf76fac/1_org_zoom.jpg 600w, https://cdn.dsmcdn.com/mnresize/1000/1500/ty1990/prod/QC_PREP/20261024/17/459b4e29-9542-362b-80aa-05515bf76fac/1_org_zoom.jpg 1000w" sizes="(max-width:640px) 92vw, 380px" width="600" height="900" loading="lazy" alt="Ceviz renkli kesme tahtası"></div>
-            <div class="t"><b><span class="sw" style="background:#6e3f26"></span>Ceviz</b><span>Sıcak, kızıl kahve. Sofrada servis tahtası olarak göz doldurur.</span><a class="card-link" href="https://www.trendyol.com/maccif/ceviz-rengi-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-sunum-ve-servis-tahtasi-p-1222796447?merchantId=1277447" target="_blank" rel="noopener"><span>Ceviz rengini incele</span> <span class="arrow" aria-hidden="true">↗</span></a></div>
+            <div class="t"><b><span class="sw" style="background:#4b3a2f"></span>Fındık</b><span>Koyu, soğuk tonlu kahve. Beyaz, gri ve siyah tezgâhlarda zarif bir kontrast.</span><a class="card-link" href="https://www.trendyol.com/maccif/findik-rengi-koyu-kahve-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener"><span>Fındık rengini incele</span> <span class="arrow" aria-hidden="true">↗</span></a></div>
           </figure>
           <figure class="color reveal" style="margin:0">
             <div class="card-media"><img src="https://cdn.dsmcdn.com/mnresize/600/900/ty1991/prod/QC_PREP/20261024/17/7c09534c-a7a0-3ebc-9772-52eb04f3c609/1_org_zoom.jpg" srcset="https://cdn.dsmcdn.com/mnresize/600/900/ty1991/prod/QC_PREP/20261024/17/7c09534c-a7a0-3ebc-9772-52eb04f3c609/1_org_zoom.jpg 600w, https://cdn.dsmcdn.com/mnresize/1000/1500/ty1991/prod/QC_PREP/20261024/17/7c09534c-a7a0-3ebc-9772-52eb04f3c609/1_org_zoom.jpg 1000w" sizes="(max-width:640px) 92vw, 380px" width="600" height="900" loading="lazy" alt="Meşe renkli kesme tahtası"></div>
-            <div class="t"><b><span class="sw" style="background:#b9783f"></span>Meşe</b><span>Açık, sıcak bal tonu. Açık renk tezgâhlarda ve kahvaltı sofralarında ferah.</span><a class="card-link" href="https://www.trendyol.com/maccif/ceviz-rengi-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-sunum-ve-servis-tahtasi-p-1222796421?merchantId=1277447" target="_blank" rel="noopener"><span>Meşe rengini incele</span> <span class="arrow" aria-hidden="true">↗</span></a></div>
+            <div class="t"><b><span class="sw" style="background:#b9783f"></span>Meşe</b><span>Açık, sıcak bal tonu. Açık renk tezgâhlarda ve kahvaltı sofralarında ferah.</span><a class="card-link" href="https://www.trendyol.com/maccif/mese-rengi-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-sunum-ve-servis-tahtasi-p-1222796421?merchantId=1277447" target="_blank" rel="noopener"><span>Meşe rengini incele</span> <span class="arrow" aria-hidden="true">↗</span></a></div>
           </figure>
         </div>
         <div class="cta-row reveal">
-          <a class="btn btn-ink" href="https://www.trendyol.com/maccif/ceviz-mese-findik-renkleri-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener">Rengini seç <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn btn-ink" href="https://www.trendyol.com/maccif/findik-rengi-koyu-kahve-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener">Rengini seç <span class="arrow" aria-hidden="true">↗</span></a>
           <span class="note">30×20×1,8 cm · meyve suyu oluğu · tutma deliği</span>
         </div>
       </div>
@@ -460,7 +478,7 @@
             <li><span class="n">03</span><div><b>Anlamlı bir hediye</b><span>Doğum günü, yeni iş ya da babalar günü için masaya yakışan bir parça.</span></div></li>
           </ul>
           <div class="cta-row">
-            <a class="btn btn-gold" href="https://www.trendyol.com/maccif/masif-maun-ahsap-masaustu-duzenleyici-erkek-telefon-stand-organizatoru-erkekler-icin-hediye-dogum-gunu-hediyesi-babalar-gunu-hediyesi-p-1156151100?merchantId=1277447" target="_blank" rel="noopener">Düzenleyiciyi incele <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn btn-gold" href="https://www.trendyol.com/maccif/masif-maun-ahsap-masaustu-duzenleyici-erkek-telefon-ve-saat-stand-organizatoru-erkege-hediye-p-1156151100?merchantId=1277447" target="_blank" rel="noopener">Düzenleyiciyi incele <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="org-media reveal">
@@ -501,7 +519,7 @@
           <div class="reveal"><b>1</b><p>Elde, ılık su ve az deterjanla yıkayın.</p></div>
           <div class="reveal"><b>2</b><p>Bulaşık makinesine koymayın, suda bekletmeyin.</p></div>
           <div class="reveal"><b>3</b><p>Yıkadıktan sonra kurulayıp dik konumda kurutun.</p></div>
-          <div class="reveal"><b>4</b><p>Ayda bir gıdaya uygun ahşap bakım yağı sürün.</p></div>
+          <div class="reveal"><b>4</b><p>Güneşten ve ısı kaynaklarından uzak, kuru bir yerde saklayın.</p></div>
         </div>
       </div>
     </section>
@@ -515,11 +533,18 @@
         </g>
       </svg>
       <div class="wrap inner reveal">
-        <p class="eyebrow">Kurumsal &amp; toplu alım</p>
+        <p class="eyebrow">Toptan · Kurumsal · Fason</p>
         <h2>Markanıza özel ahşap ürünler.</h2>
-        <p class="lead">Kurumsal hediye, etkinlik ya da toplu sipariş için adet, kişiselleştirme ve teslim tarihini birlikte planlayalım.</p>
+        <p class="lead">Masif ahşaptan her ölçü ve şekilde üretiyoruz. Adet, logo ve teslim tarihini birlikte planlayalım.</p>
+        <ul class="b2b-list">
+          <li>Kurumsal hediye, lazerle logo kazıma</li>
+          <li>Restoran, kafe ve kasaplar için servis tahtaları</li>
+          <li>Mağaza ve butiklere toptan</li>
+          <li>Markanız için fason (özel marka) üretim</li>
+        </ul>
         <div class="cta-row">
-          <a class="btn btn-gold" href="mailto:info@maccif.com?subject=Kurumsal%20ve%20Toplu%20Al%C4%B1m%20Talebi">info@maccif.com</a>
+          <a class="btn btn-gold" href="/toptan/">Toptan ve kurumsal teklif</a>
+          <a class="btn btn-line" href="/en/wholesale/" hreflang="en" lang="en">English · Wholesale</a>
         </div>
       </div>
     </section>
@@ -536,8 +561,9 @@
           <h4>Ürünler</h4>
           <ul>
             <li><a href="https://www.trendyol.com/maccif/3-lu-standli-masif-ahsap-kesme-tahtasi-seti-3-farkli-boy-oluklu-p-1173740434?merchantId=1277447" target="_blank" rel="noopener">3'lü Kesme Tahtası Seti</a></li>
-            <li><a href="https://www.trendyol.com/maccif/ceviz-mese-findik-renkleri-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener">Kesme Tahtası 30×20</a></li>
-            <li><a href="https://www.trendyol.com/maccif/masif-maun-ahsap-masaustu-duzenleyici-erkek-telefon-stand-organizatoru-erkekler-icin-hediye-dogum-gunu-hediyesi-babalar-gunu-hediyesi-p-1156151100?merchantId=1277447" target="_blank" rel="noopener">Masaüstü Düzenleyici</a></li>
+            <li><a href="https://www.trendyol.com/maccif/findik-rengi-koyu-kahve-masif-ahsap-panel-kesme-tahtasi-30x20-cm-oluklu-dograma-ve-sunum-tahtasi-p-1222796510?merchantId=1277447" target="_blank" rel="noopener">Kesme Tahtası 30×20</a></li>
+            <li><a href="https://www.trendyol.com/maccif/paslanmaz-celik-ve-masif-ahsap-cift-tarafli-kesme-tahtasi-cikarilabilir-miknatisli-plaka-35x25-cm-p-1226915825?merchantId=1277447" target="_blank" rel="noopener">Çift Taraflı Kesme Tahtası</a></li>
+            <li><a href="https://www.trendyol.com/maccif/masif-maun-ahsap-masaustu-duzenleyici-erkek-telefon-ve-saat-stand-organizatoru-erkege-hediye-p-1156151100?merchantId=1277447" target="_blank" rel="noopener">Masaüstü Düzenleyici</a></li>
           </ul>
         </div>
         <div>
@@ -545,7 +571,8 @@
           <ul>
             <li><a href="https://www.trendyol.com/magaza/maccif-m-1277447" target="_blank" rel="noopener">Trendyol mağazası</a></li>
             <li><a href="#bakim">Bakım önerileri</a></li>
-            <li><a href="#kurumsal">Kurumsal sipariş</a></li>
+            <li><a href="/toptan/">Toptan &amp; kurumsal</a></li>
+            <li><a href="/en/wholesale/" hreflang="en" lang="en">Wholesale (English)</a></li>
           </ul>
         </div>
         <div>
